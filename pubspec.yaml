@@ -1,5 +1,5 @@
 name: chronocore
-description: "A new Flutter project."
+description: "Focus World - Application de productivité gamifiée avec monde 2.5D"
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -34,6 +34,33 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  
+  # Flame Engine pour le monde 2.5D
+  flame: ^1.10.0
+  
+  # Base de données SQLite
+  sqflite: ^2.3.0
+  
+  # Stockage des préférences
+  shared_preferences: ^2.2.2
+  
+  # Podomètre pour compter les pas
+  pedometer: ^4.0.2
+  
+  # Provider pour la gestion d'état
+  provider: ^6.1.1
+  
+  # UUID pour générer des IDs uniques
+  uuid: ^4.2.2
+  
+  # Gestion des permissions
+  permission_handler: ^11.1.0
+  
+  # Gestion du temps et des timers
+  rxdart: ^0.27.7
+  
+  # Path pour SQLite
+  path: ^1.8.3
 
 dev_dependencies:
   flutter_test:
@@ -58,9 +85,10 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/images/
+    - assets/sounds/
+    - assets/sprites/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
